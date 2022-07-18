@@ -17,9 +17,9 @@ const Card = (props) => {
         <div className='relative w-full h-full text-[#222222]'>
             {badgeText ? <div className='absolute bg-white ml-1 mt-1 rounded-md p-1'>{badgeText ? `${badgeText}` : null}</div>: null}
 
-            <div className='h-[235px]  bg-red-400 rounded-[9px]'>
-                {props.coverImg}
-                <img src={`../../public/images/${props.card.coverImg}`} alt="" />
+            <div className='h-[235px] rounded-[9px]'>                
+                <img src={`../public/images/${props.card.coverImg}`} alt="" />
+                {props.card.coverImg}
             </div>
             <div className='font-[300] mt-[9px] text-[12px]'>
                 <div className='flex items-center'>
